@@ -69,6 +69,12 @@ body {
     background-color: #f4f4f4;
 }
 
+envios.body {
+    background-color: light;
+}
+
+
+
 .producto {
     background-color: white;
     padding: 20px;
@@ -97,6 +103,32 @@ body {
     border-radius: 5px;
     width: 100%;
 }
+
+button.pago {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    width: 200px;
+}
+
+button.button-index {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+
+}
+
 
 button:hover {
     background-color: #d4c70c;
@@ -185,12 +217,6 @@ footer {
     padding: 20px;
 }
 
-.galeria.contenedor2 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    padding: 20px;
-}
 
 @media (max-width: 768px) {
     .galeria-contenedor {

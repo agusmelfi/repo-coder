@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Carrito</title>
 </head>
-<body>
+<body class="bg-light">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-warning">
             <div class="container-fluid">
@@ -41,21 +41,24 @@
             <img src="../IMG/logo-applegoldit.jpg" alt="Logo" class="logo">
         </div>
     </header>
-    <main>
-        <h1>Carrito</h1>
-    </main>
+  <main>
+      <h1>Carrito</h1>
+  </main>
+  <section class="galeria-contenedor">
     <div style="text-align: center;">
-        <img class="camisetaCarrito" src="../IMG/Iphone-14.png" alt="Camiseta de los pumas">
-    </div>
-    <div class="carrito">
-        <h4 class="carrito">ARTICULO:</h4>
-        <h4 class="carrito">TALLE:</h4>
-        <h4 class="carrito">CANTIDAD:</h4>
-        <h4 class="carrito">PRECIO:</h4>
-        <h4 class="carrito">SUBTOTAL:</h4>
-        <h4 class="carrito">TOTAL:</h4>
-    </div>
- <div class="retiro">
+      <img class="camisetaCarrito" src="../IMG/Iphone-14.png" alt=" Iphone 14">
+   </div>
+   <div class="carrito">
+      <h4 class="carrito">ARTICULO:</h4>
+      <h4 class="carrito">CANTIDAD:</h4>
+      <h4 class="carrito">PRECIO:</h4>
+      <h4 class="carrito">SUBTOTAL:</h4>
+      <h4 class="carrito">TOTAL:</h4>
+   </div>
+     <button class="pago">FINALIZAR COMPRA</button>
+
+  </section>
+  <div class="retiro">
     <form action="/submit" method="post"></form>
      <label for="envio">ENVIO A DOMICILIO</label>
      <input type="checkbox" name="envio" id="envio">
