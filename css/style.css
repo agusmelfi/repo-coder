@@ -132,17 +132,6 @@ button.button-index {
 button:hover {
     background-color: #d4c70c;
 }
-/*
-#carrito {
-    list-style-type: none;
-    padding: 0;
-}
-
-#carrito li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-*/
 
 
 h3 {
@@ -157,15 +146,6 @@ main h1 {
     color: gold;
 }
 
-
-
-.camisetaCarrito {
-    border:2px solid rgb(255, 255, 255);
-    text-align: center;
-    height: 200px;
-    margin: 50px;
-    margin-left: 10%;
-}
 
 
 
@@ -205,10 +185,7 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-.imagen-carrousel {
-    max-width: 100%;
-    height: auto;
-  }
+
 .galeria-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 2fr); 
@@ -260,26 +237,6 @@ footer {
     }
   }
   
-  @media (min-width: 768px) and (max-width: 1024px) {
-    /* Ajustes para tabletas */
-  }
-
-
-
-
-
-.texto-inicio {
-    color: rgb(0, 0, 0);
-}
-
-.ul-inicio {
-color: rgb(0, 0, 0);
-}
-
-.retiro {
-    color: rgb(0, 0, 0);
-}
-
 
 .envios-container {
     max-width: 800px;
@@ -302,8 +259,6 @@ color: rgb(0, 0, 0);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 
 input,textarea {
