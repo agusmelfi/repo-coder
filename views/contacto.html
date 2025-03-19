@@ -43,43 +43,53 @@
         </div>
     </header>
 
-    <main>
-     <h1>Contacto</h1>
-     <h3>Para comunicarte con nosotros podes hacerlo desde distintos medios, estos son algunos de ellos:</h3>
+  <section class="contacto-container">
 
+    <h2>Contáctanos</h2>
 
-     <section class="container-fluid">
-        <div class="row">
-            <div class="col-6 text-center">
-                <p>11 2349 8765</p>
-            </div>
-            <div class="col-6 text-center">
-                <p>@apple.goldit</p>
-            </div>
-            <div class="col-6">
-                <img class="numeroTelefono" src="../IMG/whatsapp-logo.webp" alt="logo whatsapp">
-            </div>
-            <div class="col-6">
-                <img class="usuarioIG" src="../IMG/instagram-logo.webp" alt="logo instagram">
-            </div>
-        </div>
-     </section>
+    <div class="section m-3">
+     <h3>Formulario de contacto</h3>
+      <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+   
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email" required>
+   
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+   
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="4"></textarea> 
+   
+        <button type="submit" class="submit-btn">Enviar mensaje</button>
+      </form>
+    </div>
 
-       <div style="text-align: right;">
- 
-        <h5 class="usuarioIG"></h5>
-       </div>
-     <form action="/submit" method="post">
-     <label for="nombre">Nombre:</label>
-     <input type="text" name="nombre" id="nombre">
+    <div class="section m-3">
+      <h3>Información de contacto</h3>
+      <p>Si preferis contactarnos directamente, acá están nuestros datos:</p>
+      <p><strong>Correo electrónico:</strong> agu.melfi@gmail.com</p>
+      <p><strong>Teléfono:</strong> 11 2751 5043</p>
+      <p><strong>Horario de atención:</strong> Lunes a Viernes, 10:00 HS - 18:00 HS</p>
+    </div>
 
-     <label for="email">Correo electrónico:</label>
-     <input type="email" name="email" id="email">
+    <div class="section m-3">
+      <h3>Ubicación de la tienda</h3>
+      <p>Visitanos en nuestra tienda física</p>
+      <p><strong>Dirección:</strong> Núñez 2324, CABA</p>
+      <iframe src="https://maps.app.goo.gl/7sSEVf2YN4NjG2gf6" frameborder="0"></iframe>
+    </div>
 
-     <label for="mensaje">Mensaje:</label>
-     <textarea name="mensaje" id="mensaje" rows="4"></textarea> 
-     </form>
-    </main>
+    <div class="section m-3">
+      <h3>Redes sociales</h3>
+      <p>Seguinos en nuestras redes sociales para estar al tanto de todas las novedades</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/apple.goldit?igsh=Zjd2YXZudzkxcjNq">Instagram</a>
+      </div>
+    </div>
+
+  </section>
 
 
     
