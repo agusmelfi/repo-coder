@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar {
+    background-color: gold; 
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding-left: 20%;
+}
+
+.navbar li {
+    display: inline; 
+    margin: 0 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+
+  .logo-container {
+    position: absolute;
+    top: -49px;
+    left: 30px;
+
+  }
+
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+  }
+  
+section img {
+    height: 400px;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+envios.body {
+    background-color: light;
+}
+
+
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    height: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.agregar-al-carrito {
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button.pago {
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    width: 200px;
+}
+
+button.button-index {
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+
+}
+
+
+button:hover {
+    background-color: #d4c70c;
+}
+
+
+h3 {
+    color: rgb(0, 0, 0);
+}
+
+
+main h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    color: gold;
+}
+
+
+
+
+.pasos {
+    padding: 30px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.carrito {
+    text-align: left;
+    margin-left: 15%;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    height: 200px;
+    margin: 50px;
+    margin-left: 10%;
+
+}
+
+
+
+
+.producto {
+    text-align: center; 
+    width: 250px; 
+    margin: 0 auto;
+
+}
+.producto img {
+    margin: 0 auto;
+}
+
+footer {
+    color: rgb(0, 0, 0);
+}
+
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.envios-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+input,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1 solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color:#4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;   
+}
+
+
+label {
+    line-height: 1.6;
+    color: #555;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .galeria-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-contenedor {
+        grid-template-columns: 1fr; 
+    }
+
+    .producto {
+        width: 100%; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-container {
+      text-align: center;
+    }
+    .imagen-carrousel {
+      width: 100%;
+      padding: 0;
+    }
+    .container-fluid .row {
+      flex-direction: column;
+    }
+    .col-6 {
+      width: 100%;
+    }
+  }
+  
+  
+  
