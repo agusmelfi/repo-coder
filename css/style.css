@@ -128,7 +128,7 @@ h3 {
 main h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  text-decoration: underline;
+  text-transform: uppercase;
   color: gold;
 }
 
@@ -139,9 +139,18 @@ main h1 {
 }
 
 .carrito {
-  text-align: left;
-  margin-left: 15%;
-  color: rgb(0, 0, 0);
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carrito-1 {
+  padding: 30px;
+}
+
+.producto-carrito img {
+  padding-left: 32%;
 }
 
 .envios-container {
@@ -203,6 +212,7 @@ footer {
 @media (max-width: 768px) {
   .galeria-contenedor {
     grid-template-columns: repeat(2, 1fr);
+    margin-right: 25px;
   }
   .producto {
     width: 100%;
@@ -211,9 +221,14 @@ footer {
 @media (max-width: 480px) {
   .galeria-contenedor {
     grid-template-columns: 1fr;
+    margin-right: 27px;
   }
   .producto {
     width: 100%;
+  }
+  iframe {
+    width: 200px;
+    height: 150px;
   }
 }
 @media (max-width: 768px) {
@@ -225,15 +240,15 @@ footer {
   .logo-container {
     text-align: center;
   }
-  .imagen-carrousel {
-    width: 100%;
-    padding: 0;
-  }
   .container-fluid .row {
     flex-direction: column;
   }
   .col-6 {
     width: 100%;
+  }
+  iframe {
+    width: 300px;
+    height: 200px;
   }
 }
 

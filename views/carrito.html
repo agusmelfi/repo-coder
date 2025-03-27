@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <title>Carrito</title>
-</head>
+</head> 
+
 <body class="bg-dark">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-warning">
@@ -41,31 +42,45 @@
             <img src="../images/logo-nuevo.jpg" alt="Logo" class="logo">
         </div>
     </header>
-  <main>
-      <h1>Carrito</h1>
-  </main>
-  <section class="galeria-contenedor">
-    <div style="text-align: center;">
-      <img class="camisetaCarrito" src="../images/Iphone-14.png" alt=" Iphone 14">
-   </div>
-   <div class="carrito">
-      <h4 class="carrito">ARTICULO:</h4>
-      <h4 class="carrito">CANTIDAD:</h4>
-      <h4 class="carrito">PRECIO:</h4>
-      <h4 class="carrito">SUBTOTAL:</h4>
-      <h4 class="carrito">TOTAL:</h4>
-   </div>
-     <button class="pago">FINALIZAR COMPRA</button>
 
-  </section>
-  <div class="retiro">
-    <form action="/submit" method="post"></form>
-     <label for="envio">ENVIO A DOMICILIO</label>
-     <input type="checkbox" name="envio" id="envio">
+  <section class="carrito">
+    <div class="carrito-1 card">
+        <div class="producto-carrito">
+          <h2 class="text-center">Iphone 14</h2>
+          <img class="" src="../images/Iphone-14.png" alt="Iphone 14">
+          <p class="text-center">Precio: $879</p>
+        </div>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" max="10">
+    </div>
+    <div class="p-5">
+      <h2 class="text-light text-center">FINALIZAR COMPRA</h2>
+     <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+    
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <br>
+        <br>
+    
+        <label for="pago">Método de Pago:</label>
+        <select id="pago" name="pago" required>
+            <option value="tarjeta">Tarjeta de Crédito</option>
+            <option value="paypal">PayPal</option>
+            <option value="mercadopago">Mercado Pago</option>
+        </select>
+        <br>
+        <br>
+    
+        <button class="bg-light" type="submit" >Finalizar Compra</button>
+    </form>
+    
+   </div>
 
-     <label for="retira">RETIRA EN LOCAL</label>
-     <input type="checkbox" name="envio" id="envio">
- </div>
+   </section>
+
+
     <footer>
         <p>&copy; 2025 AppleGoldit. Todos los derechos reservados.</p>
     </footer>
