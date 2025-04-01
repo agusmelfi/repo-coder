@@ -92,6 +92,9 @@ envios.body {
   border-radius: 5px;
   width: 100%;
 }
+.agregar-al-carrito:hover {
+  background-color: #d4c70c;
+}
 
 button.pago {
   background-color: gold;
@@ -105,6 +108,9 @@ button.pago {
   height: 60px;
   width: 200px;
 }
+button.pago:hover {
+  background-color: #d4c70c;
+}
 
 button.button-index {
   background-color: gold;
@@ -114,10 +120,10 @@ button.button-index {
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
+  width: 100%;
   width: 30%;
 }
-
-button:hover {
+button.button-index:hover {
   background-color: #d4c70c;
 }
 
@@ -139,6 +145,8 @@ main h1 {
 }
 
 .carrito {
+  display: flex;
+  flex-direction: column;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 40px;
@@ -153,24 +161,12 @@ main h1 {
   padding-left: 32%;
 }
 
-.envios-container {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: grey;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
+.envios-container,
 .contacto-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: grey;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -186,18 +182,20 @@ input, textarea {
 .submit-btn {
   background-color: gold;
   color: black;
-  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.submit-btn:hover {
+  background-color: #d4c70c;
 }
 
 label {
   line-height: 1.6;
   color: #555;
-}
-
-.submit-btn:hover {
-  background-color: #d4c70c;
 }
 
 .social-icons a {

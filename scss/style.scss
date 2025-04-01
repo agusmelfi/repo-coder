@@ -3,6 +3,19 @@
 @import "nav";
 @import "variables";
 
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    &:hover {
+        background-color: #d4c70c;
+    }
+}
 .content {
     padding: 20px;
     text-align: center;
@@ -61,43 +74,19 @@ envios.body {
 }
 
 .agregar-al-carrito {
-    background-color: $primary-color;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
+    @include button-style($primary-color, rgb(0, 0, 0));
 }
 
 button.pago {
-    background-color: $primary-color;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
+    @include button-style($primary-color, rgb(0, 0, 0));
     height: 60px;
     width: 200px;
 }
 
 
 button.button-index {
-    background-color: $primary-color;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
+    @include button-style($primary-color, rgb(0, 0, 0));
     width: 30%;
-}
-
-button:hover {
-    background-color: #d4c70c;
 }
 
 h3 {
@@ -121,6 +110,8 @@ main {
 }
 
 .carrito {
+    display: flex;
+    flex-direction: column;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 40px;
@@ -138,24 +129,12 @@ main {
 }
 
 
-.envios-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: grey;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
+.envios-container,
 .contacto-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: grey;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -170,11 +149,7 @@ input,textarea {
 }
 
 .submit-btn {
-    background-color:$primary-color;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;   
+    @include button-style($primary-color, black);
 }
 
 
@@ -183,9 +158,6 @@ label {
     color: #555;
 }
 
-.submit-btn:hover {
-    background-color: #d4c70c;
-}
 
 .social-icons a {
     margin-right: 10px;
